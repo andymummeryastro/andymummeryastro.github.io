@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software — Andy Mummery</title>
+  <meta name="description" content="Public codes: FitTeD, TDEFLARE, and XSPEC models for black hole discs and TDEs.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Andy Mummery</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html" class="active">Software</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="media.html">Media</a>
+        <a href="people.html">People</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-tools">
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode">◑</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page">
+    <aside class="sidebar">
+      <img class="headshot" src="assets/photo.jpg" alt="Andy Mummery">
+      <p class="name">Andy Mummery</p>
+      <p class="bio">John N. Bahcall Fellow<br>Institute for Advanced Study</p>
+      <ul class="sidebar-meta">
+        <li><span class="icon">📍</span> Princeton, NJ</li>
+        <li><span class="icon">✉️</span> <a href="mailto:amummery@ias.edu">Email</a></li>
+        <li><span class="icon">⌘</span> <a href="https://github.com/andymummeryastro">GitHub</a></li>
+        <li><span class="icon">⚙</span> <a href="https://github.com/fittingtransientswithdiscs">FitTeD</a></li>
+        <li><span class="icon">🎓</span> <a href="https://scholar.google.com/citations?user=vEMN2XIAAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li><span class="icon">📄</span> <a href="https://arxiv.org/a/mummery_a_1">arXiv</a></li>
+        <li><span class="icon">📚</span> <a href="https://ui.adsabs.harvard.edu/user/libraries/2zyx78XmSL6WL1D6o946hA">NASA ADS</a></li>
+        <li><span class="icon">📑</span> <a href="cv.html">CV</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Software</h1>
+      <p>
+        Public tools for fitting transients and X-ray spectra with relativistic
+        disc models live under the
+        <a href="https://github.com/fittingtransientswithdiscs">FitTeD organisation</a>
+        on GitHub. Many of the repositories currently on my personal account
+        will be migrated there over the next few months.
+      </p>
+
+      <h2>FitTeD</h2>
+      <p>
+        <strong>Fitting Transients with Discs</strong> — a Python package for
+        light curves and spectra of evolving relativistic accretion discs
+        (Mummery, Nathan, Ingram &amp; Gardner 2025, MNRAS 544, 2225).
+        Used for multi-epoch TDE spectral fitting (including GSN&nbsp;069 in pyXspec).
+      </p>
+      <p>
+        <a href="https://github.com/fittingtransientswithdiscs/FitTeD">GitHub</a>
+        ·
+        <a href="https://fittingtransientswithdiscs.github.io/FitTeD/">docs</a>
+        ·
+        <a href="https://arxiv.org/abs/2408.15048">paper</a>
+      </p>
+
+      <h2>TDEFLARE</h2>
+      <p>
+        Rapid black hole masses from TDE optical/UV flares, calibrated on
+        thermal X-ray continua and late-time UV plateaus. Seconds on a laptop;
+        does not require a detected plateau. 89 TDE masses in the accompanying paper.
+        TDEFLARE is part of the FitTeD package.
+      </p>
+      <p>
+        <a href="https://github.com/fittingtransientswithdiscs/FitTeD">GitHub</a>
+        ·
+        <a href="https://arxiv.org/abs/2601.14483">paper</a>
+      </p>
+
+      <h2>tidalspin</h2>
+      <p>
+        Bayesian constraints on black hole spin from the relativistic tidal
+        forces in a tidal disruption event, given a prior on the black hole mass
+        (Mummery 2024, MNRAS 527, 6233). Uses only the Hills-mass limit; does
+        not require a disc spectrum.
+      </p>
+      <p>
+        <a href="https://github.com/andymummeryastro/tidalspin">GitHub</a>
+        ·
+        <a href="https://arxiv.org/abs/2312.00557">paper</a>
+      </p>
+
+      <h2>XSPEC / spectral models</h2>
+      <ul>
+        <li><a href="https://github.com/andymummeryastro/fullkerr">fullkerr</a> — continuum emission from within the ISCO.</li>
+        <li><a href="https://github.com/andymummeryastro/TDEdiscXraySpectrum">TDEdiscXraySpectrum</a> — TDE disc spectra in XSPEC.</li>
+        <li><a href="https://github.com/andymummeryastro/superkerr">superkerr</a> — continuum fitting in the general Kerr metric (including super-extremal spins).</li>
+        <li><a href="https://github.com/andymummeryastro/superkerrline">superkerrline</a> — iron-line / reflection models in the full Kerr metric.</li>
+        <li><a href="https://github.com/andymummeryastro/GR_prop_fluc">GR_prop_fluc</a> — variability of relativistic accretion flows.</li>
+      </ul>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 Andy Mummery · <a href="mailto:amummery@ias.edu">amummery@ias.edu</a>
+  </footer>
+  <script src="assets/nav.js"></script>
+</body>
+</html>

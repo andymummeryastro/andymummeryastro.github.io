@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Andy Mummery</title>
+  <meta name="description" content="Research questions: black hole demographics from TDEs, discs far from equilibrium, the plunging region, and scale invariance of accretion.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Andy Mummery</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Software</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="media.html">Media</a>
+        <a href="people.html">People</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-tools">
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode">◑</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page">
+    <aside class="sidebar">
+      <img class="headshot" src="assets/photo.jpg" alt="Andy Mummery">
+      <p class="name">Andy Mummery</p>
+      <p class="bio">John N. Bahcall Fellow<br>Institute for Advanced Study</p>
+      <ul class="sidebar-meta">
+        <li><span class="icon">📍</span> Princeton, NJ</li>
+        <li><span class="icon">✉️</span> <a href="mailto:amummery@ias.edu">Email</a></li>
+        <li><span class="icon">⌘</span> <a href="https://github.com/andymummeryastro">GitHub</a></li>
+        <li><span class="icon">⚙</span> <a href="https://github.com/fittingtransientswithdiscs">FitTeD</a></li>
+        <li><span class="icon">🎓</span> <a href="https://scholar.google.com/citations?user=vEMN2XIAAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li><span class="icon">📄</span> <a href="https://arxiv.org/a/mummery_a_1">arXiv</a></li>
+        <li><span class="icon">📚</span> <a href="https://ui.adsabs.harvard.edu/user/libraries/2zyx78XmSL6WL1D6o946hA">NASA ADS</a></li>
+        <li><span class="icon">📑</span> <a href="cv.html">CV</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Research</h1>
+      <p>
+        I am interested in how gas falls onto a black hole, how that flow
+        radiates, and what the light can tell us about mass, spin, and the
+        spacetime. Standard thin-disc theory is built for a flow that has
+        already settled into a quiet, circular, radiatively efficient state.
+        Many of the discs we can actually observe — tidal disruption events,
+        X-ray binary outbursts, changing-look AGN — are not in that state.
+        They turn on, spread, change accretion rate, and (sometimes) launch
+        outflows, all in the strong-gravity region where Newtonian models
+        fail.
+      </p>
+      <p>
+        Much of my work is pen-and-paper disc theory, but always with the
+        goal that it must connect with real data — either X-ray and UV/optical
+        observations, or numerical simulations (or ideally both!). Below I
+        list some of the questions I am interested in at the moment.
+      </p>
+      <ol class="research-toc">
+        <li><a href="#demographics">Can we constrain black hole demographics with tidal disruption events?</a></li>
+        <li><a href="#plunging">Is the plunging region dark?</a></li>
+        <li><a href="#scale-invariance">Is black hole accretion scale invariant?</a></li>
+        <li><a href="#time-dependent">How do black hole accretion flows evolve far from inflow equilibrium?</a></li>
+      </ol>
+      <p>
+        These four questions are nowhere near all I am working on. For more,
+        papers are on
+        <a href="publications.html">Publications</a>, codes on
+        <a href="software.html">Software</a>.
+      </p>
+
+      <div class="research-q">
+        <h2 id="demographics">Can we constrain black hole demographics with tidal disruption events?</h2>
+        <p>
+          Most of what we know about supermassive black hole masses comes from
+          the small fraction of galaxies that are close enough to resolve their
+          impact on stellar dynamics. Quiescent black holes below about
+          10<sup>7</sup>&nbsp;M<sub>⊙</sub> — the regime that decides how black
+          holes and galaxies grew together — are largely invisible.
+        </p>
+        <p>
+          A tidal disruption event gives us the rare opportunity to study these
+          previously quiescent black holes, and by utilising time-dependent disc
+          theory we have demonstrated that we can constrain black hole masses
+          at the ~0.3&nbsp;dex level, allowing us to add tens of low-mass black
+          holes to the M–σ relation, and search for (and discover) intermediate
+          mass black holes.
+        </p>
+        <div class="research-figs">
+          <figure class="research-fig">
+            <img src="assets/14li-sed.png" alt="Multi-epoch UV and X-ray spectral energy distribution of ASASSN-14li fitted with a relativistic disc model">
+            <figcaption>
+              Four epochs of the TDE ASASSN-14li, UV through X-ray, fitted
+              simultaneously with one evolving relativistic disc.
+            </figcaption>
+          </figure>
+          <figure class="research-fig">
+            <img src="assets/m-sigma.png" alt="Black hole mass versus host galaxy velocity dispersion, with TDE masses overlaid on the Greene et al. 2020 sample">
+            <figcaption>
+              TDE masses (blue) extend the M–σ relation an order of magnitude
+              below the dynamical sample of Greene et al. (2020).
+            </figcaption>
+          </figure>
+        </div>
+        <ul>
+          <li>
+            <a href="https://arxiv.org/abs/1912.06577">Mummery &amp; Balbus (2020)</a>
+            — we showed that the late-time UV and X-ray evolution of a TDE is
+            that of a cooling relativistic disc. This sets the scene for using
+            the late-time emission as a route to black hole mass measurements
+            through light curve and spectral fitting.
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2308.08255">Mummery et al. (2024)</a>
+            — we turned this into a practical tool for the community:
+            relativistic TDE discs obey scaling relationships set by the black
+            hole mass, so that observations at late times (which we get for
+            free with all-sky optical surveys) can be used to weigh the black
+            hole.
+          </li>
+          <li>
+            Those models are now widely used by others — for example
+            <a href="https://arxiv.org/abs/2409.02181">Nicholl et al. (2024, Nature)</a>,
+            where the size of the disc in AT2019qiz underpins the interpretation
+            of its quasi-periodic eruptions as disc–EMRI collisions.
+          </li>
+          <li>
+            Many of the key advances in the last few years in this field were
+            driven by my student Muryel Guolo while he was at Johns Hopkins
+            (now a member at the IAS), including
+            <a href="https://arxiv.org/abs/2408.17296">†Guolo &amp; Mummery (2025)</a>
+            on ASASSN-14li and HLX-1,
+            <a href="https://arxiv.org/abs/2510.26774">†Guolo, Mummery, van Velzen et al. (2025)</a>
+            on compact TDE discs, and
+            <a href="https://arxiv.org/abs/2602.12272">†Guolo, Mummery, van Velzen et al. (2026)</a>
+            on the off-nuclear TDE AT2024tvd.
+          </li>
+        </ul>
+        <p class="pub-links">
+          Some other papers of possible interest:
+          <a href="https://arxiv.org/abs/2410.17087">luminosity functions</a>
+          ·
+          <a href="https://arxiv.org/abs/2601.14483">TDEFLARE</a>
+          ·
+          <a href="https://arxiv.org/abs/2312.00557">tidalspin</a>
+        </p>
+      </div>
+
+      <div class="research-q">
+        <h2 id="plunging">Is the plunging region dark?</h2>
+        <p>
+          Black hole spin measurements rest on a key assumption: the gas stops
+          radiating once it crosses the innermost stable circular orbit, so that
+          the “inner edge” of the disc traces the ISCO and therefore the spin.
+          If that assumption is wrong, a large body of electromagnetic spin
+          measurements may be (perhaps severely) biased, which will have
+          wide-ranging implications (for example with comparison to the spins
+          from LIGO–Virgo merging black holes).
+        </p>
+        <p>
+          Modern general-relativistic magnetohydrodynamical simulations suggest
+          that this assumption is wrong. This motivates the development of
+          analytical theories which can reproduce these GRMHD simulations, and
+          are able to be fit to data.
+        </p>
+        <div class="research-figs">
+          <figure class="research-fig">
+            <img src="assets/maxi-j1820-spectrum.png" alt="X-ray spectrum of MAXI J1820+070 with model components, including emission from inside the ISCO">
+            <figcaption>
+              Soft-state spectrum of MAXI&nbsp;J1820+070. The orange curve is
+              photons from the plunging region
+              (<em>r</em>&nbsp;≤&nbsp;<em>r</em><sub>I</sub>); green is the disc
+              outside the ISCO.
+            </figcaption>
+          </figure>
+          <figure class="research-fig">
+            <img src="assets/plunging-spirals.png" alt="GRMHD density snapshot showing spiral arms in the plunging region, overlaid with analytic spiral tracks">
+            <figcaption>
+              Accretion in the plunging region is mediated by spiral arms
+              (Mummery &amp; Stone 2024). The overlaid curves are the arm
+              shapes derived from first principles with pen and paper.
+            </figcaption>
+          </figure>
+        </div>
+        <ul>
+          <li>
+            <a href="https://arxiv.org/abs/2209.03579">Mummery &amp; Balbus (2022, PRL)</a>
+            and
+            <a href="https://arxiv.org/abs/2302.14437">Mummery &amp; Balbus (2023)</a>
+            — we derived exact geodesic inspirals from the Kerr ISCO, and
+            adiabatic thermodynamic solutions for the plunging flow, giving an
+            analytic theory that can be compared directly with GRMHD.
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2405.09175">Mummery, Ingram, Davis &amp; Fabian (2024)</a>
+            — we fitted the soft-state spectrum of MAXI&nbsp;J1820+070 with
+            continuum emission from within the ISCO, showing that a plunging
+            region which radiates is required by the data.
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2505.13119">Mummery, Jiang, Ingram, Fabian &amp; Rule (2025)</a>
+            — a high-spin, dark-plunging solution is degenerate with a
+            lower-spin disc that radiates while plunging, so neglecting
+            intra-ISCO emission can bias electromagnetic spin measurements
+            (e.g. M33&nbsp;X-7).
+          </li>
+          <li>
+            The GRMHD comparison for thin discs has been led by my student
+            Jake Rule at Oxford University, including
+            <a href="https://arxiv.org/abs/2505.13701">†Rule, Mummery, Balbus, Stone &amp; Zhang (2025)</a>
+            on a Schwarzschild hole and
+            <a href="https://arxiv.org/abs/2608.06278">†Rule, Mummery, Balbus, Stone &amp; Zhang (2026)</a>
+            across the black hole spin range.
+          </li>
+        </ul>
+        <p class="pub-links">
+          Some other papers of possible interest:
+          <a href="https://arxiv.org/abs/2406.14957">MAXI J0637−430</a>
+          ·
+          <a href="https://arxiv.org/abs/2501.05843">Thorne limit</a>
+          ·
+          <a href="https://github.com/andymummeryastro/fullkerr">fullkerr</a>
+        </p>
+      </div>
+
+      <div class="research-q">
+        <h2 id="scale-invariance">Is black hole accretion scale invariant?</h2>
+        <p>
+          General relativity has no preferred mass scale: rescale everything by
+          the black hole mass and the metric looks the same. While ideal
+          magnetohydrodynamics behaves similarly, not everything relating to
+          the disc has that freedom — opacities, radiation pressure,
+          self-gravity, and the environment all pick out physical scales. So
+          the question of whether a 10&nbsp;M<sub>⊙</sub> X-ray binary and a
+          10<sup>7</sup>&nbsp;M<sub>⊙</sub> TDE disc are the same scaled object
+          in different units is a test of which physics actually sets what we
+          observe.
+        </p>
+        <p>
+          The same relativistic thin-disc theory can be applied across the full
+          mass range. This is the most rapidly evolving area of my research at
+          the moment, with much more to come in the next few months with
+          Goodwin, Guolo, et al.
+        </p>
+        <figure class="research-fig research-fig-solo">
+          <img src="assets/jet-critical-mdot.png" alt="Posterior distribution of the accretion rate at jet launch in Eddington units, for prompt and delayed ejections">
+          <figcaption>
+            Posterior on the accretion rate at jet launch (Goodwin &amp;
+            Mummery 2026, Nature Astronomy). Prompt and delayed ejections
+            cluster at two characteristic Eddington-scaled rates.
+          </figcaption>
+        </figure>
+        <ul>
+          <li>
+            <a href="https://arxiv.org/abs/2602.14838">Goodwin &amp; Mummery (2026, Nature Astronomy; joint first authors)</a>
+            — a single critical accretion rate appears to set jet launching
+            across tidal disruption events and X-ray binaries, a direct test
+            of scale invariance in Eddington units.
+          </li>
+          <li>
+            Joint X-ray + UV/optical SED fitting work on both supermassive and
+            intermediate-mass black holes
+            (<a href="https://arxiv.org/abs/2408.17296">†Guolo &amp; Mummery 2025</a>)
+            — does the same hold for X-ray binaries? (Stay tuned).
+          </li>
+        </ul>
+        <p class="pub-links">
+          Some other papers of possible interest:
+          <a href="https://arxiv.org/abs/2602.21624">state transitions in TDEs</a>
+          ·
+          <a href="https://arxiv.org/abs/2607.15438">radio flares</a>
+          ·
+          <a href="https://arxiv.org/abs/2602.18698">repeating partial TDEs</a>
+        </p>
+      </div>
+
+      <div class="research-q">
+        <h2 id="time-dependent">How do black hole accretion flows evolve far from inflow equilibrium?</h2>
+        <p>
+          Almost all accretion theory assumes a disc is in a steady state: mass
+          flows in at the same rate everywhere, and the structure does not
+          depend on how the gas arrived. Real flows are rarely in that state,
+          and the systems we can actually watch evolve — TDEs, state
+          transitions in X-ray binaries — are precisely the ones where the
+          assumption fails. The time-dependent problem is harder, but it is also
+          where the evolution reveals extra physics hidden by the steady-state
+          assumptions.
+        </p>
+        <p>
+          This is a fun problem that can be approached from a pure maths
+          perspective (relativistic Green’s functions, etc.), as a tool for
+          observational data fitting (e.g., the FitTeD package), and for
+          comparison to GRMHD simulations (stay tuned for more on that one).
+        </p>
+        <ul>
+          <li>
+            Closed-form solutions of the thin-disc equation:
+            <a href="https://arxiv.org/abs/2210.06161">relativistic Green’s functions</a>,
+            <a href="https://arxiv.org/abs/2601.11754">Newtonian Green’s functions with winds</a>,
+            and
+            <a href="https://arxiv.org/abs/2305.18314">propagating fluctuations</a>.
+          </li>
+          <li>
+            Turning this into a practical data package —
+            <a href="https://arxiv.org/abs/2408.15048">FitTeD</a>
+            (<a href="software.html">Software</a>).
+          </li>
+          <li>
+            Out soon, comparing pen-and-paper theory to the ultra-long-run
+            GRMHD simulations of
+            <a href="https://arxiv.org/abs/2504.16802">Guo et al. (2025)</a>.
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 Andy Mummery · <a href="mailto:amummery@ias.edu">amummery@ias.edu</a>
+  </footer>
+  <script src="assets/nav.js"></script>
+</body>
+</html>
